@@ -58,6 +58,7 @@ function LogIn() {
           <div className='signInLine'>
             Aren't Registered?
             <a href='/register' className='Registerbtn'>
+
               Register
             </a>
           </div>
