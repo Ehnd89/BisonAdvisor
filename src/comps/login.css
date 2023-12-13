@@ -95,11 +95,12 @@ button {
     background-color: #236a91bf;
     color: #fff;
     width: 45%;
-    padding: 12px;
+    padding: 20px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+
 }
 
 .loginbtn{

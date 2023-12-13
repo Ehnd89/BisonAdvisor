@@ -28,6 +28,9 @@ function LogIn() {
             Aren't Registered?
             <a href="/register" className="Registerbtn">
               Register
+              <div className="Continuebtn">
+              <button type="submit">Continue</button>
+            </div>              
             </a>
           </div>
         </div>
