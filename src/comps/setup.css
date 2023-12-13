@@ -1,3 +1,38 @@
 .QuestionBox{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-top: 20px;
+    padding: 20px;
+    height: 600px;
+    border: .5px solid rgb(208, 207, 207);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.welcome{
+    font-size: 33px;
+    text-align: center;
+}
+
+.setupForm{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     
+}
+
+.graduationDate{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+input{
+    width: 50%;
 }
