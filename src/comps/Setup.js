@@ -148,11 +148,26 @@ function Setup() {
     setSelectedYear(e.target.value);
   };
 
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    const response = await fetch('http://localhost:5001/api/setup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        major,
+        minor,
+        month,
+        year,
+      }),
+    });
+  }
+
   return (
     <>
       <div className="QuestionBox">
         <p className="welcome">Welcome, set up your profile!</p>
-        <form className="setupForm">
+        <form className="setupForm" onSubmit={submitForm}>
 
           <div className="box">
           <label htmlFor="major">Major:</label>
